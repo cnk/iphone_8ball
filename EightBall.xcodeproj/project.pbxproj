@@ -20,6 +20,7 @@
 		664B74DC15F99E5300E6E2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BD15F99E5200E6E2BD /* Foundation.framework */; };
 		664B74E415F99E5300E6E2BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 664B74E215F99E5300E6E2BD /* InfoPlist.strings */; };
 		664B74E715F99E5300E6E2BD /* EightBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B74E615F99E5300E6E2BD /* EightBallTests.m */; };
+		664B74F215F99ECA00E6E2BD /* 8ball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 664B74F115F99ECA00E6E2BD /* 8ball.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		664B74E315F99E5300E6E2BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		664B74E515F99E5300E6E2BD /* EightBallTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightBallTests.h; sourceTree = "<group>"; };
 		664B74E615F99E5300E6E2BD /* EightBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightBallTests.m; sourceTree = "<group>"; };
+		664B74F115F99ECA00E6E2BD /* 8ball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8ball.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		664B74C215F99E5200E6E2BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				664B74F015F99EB100E6E2BD /* images */,
 				664B74C315F99E5200E6E2BD /* EightBall-Info.plist */,
 				664B74C415F99E5200E6E2BD /* InfoPlist.strings */,
 				664B74C715F99E5200E6E2BD /* main.m */,
@@ -149,6 +152,14 @@
 				664B74E215F99E5300E6E2BD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		664B74F015F99EB100E6E2BD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				664B74F115F99ECA00E6E2BD /* 8ball.gif */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +235,7 @@
 			files = (
 				664B74C615F99E5200E6E2BD /* InfoPlist.strings in Resources */,
 				664B74CF15F99E5200E6E2BD /* MainStoryboard.storyboard in Resources */,
+				664B74F215F99ECA00E6E2BD /* 8ball.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
