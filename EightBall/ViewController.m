@@ -28,8 +28,10 @@
 
 -(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
+    NSArray *answers = @[@"Yes!", @"No!", @"Ask Again!", @"Maybe!"];
+    int rndIndex = arc4random()%[answers count];
     if (motion == UIEventSubtypeMotionShake) {
-        [self setAnswerText:@"Shake! Shake!"];
+        [self setAnswerText:answers[rndIndex]];
     }
 }
 
