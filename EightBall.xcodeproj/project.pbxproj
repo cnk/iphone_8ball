@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		664B74BC15F99E5200E6E2BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BB15F99E5200E6E2BD /* UIKit.framework */; };
+		664B74BE15F99E5200E6E2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BD15F99E5200E6E2BD /* Foundation.framework */; };
+		664B74C015F99E5200E6E2BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BF15F99E5200E6E2BD /* CoreGraphics.framework */; };
+		664B74C615F99E5200E6E2BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 664B74C415F99E5200E6E2BD /* InfoPlist.strings */; };
+		664B74C815F99E5200E6E2BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B74C715F99E5200E6E2BD /* main.m */; };
+		664B74CC15F99E5200E6E2BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B74CB15F99E5200E6E2BD /* AppDelegate.m */; };
+		664B74CF15F99E5200E6E2BD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664B74CD15F99E5200E6E2BD /* MainStoryboard.storyboard */; };
+		664B74D215F99E5200E6E2BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B74D115F99E5200E6E2BD /* ViewController.m */; };
+		664B74DA15F99E5300E6E2BD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74D915F99E5300E6E2BD /* SenTestingKit.framework */; };
+		664B74DB15F99E5300E6E2BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BB15F99E5200E6E2BD /* UIKit.framework */; };
+		664B74DC15F99E5300E6E2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BD15F99E5200E6E2BD /* Foundation.framework */; };
+		664B74E415F99E5300E6E2BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 664B74E215F99E5300E6E2BD /* InfoPlist.strings */; };
+		664B74E715F99E5300E6E2BD /* EightBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B74E615F99E5300E6E2BD /* EightBallTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		664B74DD15F99E5300E6E2BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 664B74AE15F99E5200E6E2BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 664B74B615F99E5200E6E2BD;
+			remoteInfo = EightBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		664B74B715F99E5200E6E2BD /* EightBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		664B74BB15F99E5200E6E2BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		664B74BD15F99E5200E6E2BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		664B74BF15F99E5200E6E2BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		664B74C315F99E5200E6E2BD /* EightBall-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EightBall-Info.plist"; sourceTree = "<group>"; };
+		664B74C515F99E5200E6E2BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		664B74C715F99E5200E6E2BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		664B74C915F99E5200E6E2BD /* EightBall-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EightBall-Prefix.pch"; sourceTree = "<group>"; };
+		664B74CA15F99E5200E6E2BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		664B74CB15F99E5200E6E2BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		664B74CE15F99E5200E6E2BD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		664B74D015F99E5200E6E2BD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		664B74D115F99E5200E6E2BD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		664B74D815F99E5300E6E2BD /* EightBallTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EightBallTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		664B74D915F99E5300E6E2BD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		664B74E115F99E5300E6E2BD /* EightBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EightBallTests-Info.plist"; sourceTree = "<group>"; };
+		664B74E315F99E5300E6E2BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		664B74E515F99E5300E6E2BD /* EightBallTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightBallTests.h; sourceTree = "<group>"; };
+		664B74E615F99E5300E6E2BD /* EightBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightBallTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		664B74B415F99E5200E6E2BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664B74BC15F99E5200E6E2BD /* UIKit.framework in Frameworks */,
+				664B74BE15F99E5200E6E2BD /* Foundation.framework in Frameworks */,
+				664B74C015F99E5200E6E2BD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664B74D415F99E5300E6E2BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664B74DA15F99E5300E6E2BD /* SenTestingKit.framework in Frameworks */,
+				664B74DB15F99E5300E6E2BD /* UIKit.framework in Frameworks */,
+				664B74DC15F99E5300E6E2BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		664B74AC15F99E5200E6E2BD = {
+			isa = PBXGroup;
+			children = (
+				664B74C115F99E5200E6E2BD /* EightBall */,
+				664B74DF15F99E5300E6E2BD /* EightBallTests */,
+				664B74BA15F99E5200E6E2BD /* Frameworks */,
+				664B74B815F99E5200E6E2BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		664B74B815F99E5200E6E2BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				664B74B715F99E5200E6E2BD /* EightBall.app */,
+				664B74D815F99E5300E6E2BD /* EightBallTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		664B74BA15F99E5200E6E2BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				664B74BB15F99E5200E6E2BD /* UIKit.framework */,
+				664B74BD15F99E5200E6E2BD /* Foundation.framework */,
+				664B74BF15F99E5200E6E2BD /* CoreGraphics.framework */,
+				664B74D915F99E5300E6E2BD /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		664B74C115F99E5200E6E2BD /* EightBall */ = {
+			isa = PBXGroup;
+			children = (
+				664B74CA15F99E5200E6E2BD /* AppDelegate.h */,
+				664B74CB15F99E5200E6E2BD /* AppDelegate.m */,
+				664B74CD15F99E5200E6E2BD /* MainStoryboard.storyboard */,
+				664B74D015F99E5200E6E2BD /* ViewController.h */,
+				664B74D115F99E5200E6E2BD /* ViewController.m */,
+				664B74C215F99E5200E6E2BD /* Supporting Files */,
+			);
+			path = EightBall;
+			sourceTree = "<group>";
+		};
+		664B74C215F99E5200E6E2BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				664B74C315F99E5200E6E2BD /* EightBall-Info.plist */,
+				664B74C415F99E5200E6E2BD /* InfoPlist.strings */,
+				664B74C715F99E5200E6E2BD /* main.m */,
+				664B74C915F99E5200E6E2BD /* EightBall-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		664B74DF15F99E5300E6E2BD /* EightBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				664B74E515F99E5300E6E2BD /* EightBallTests.h */,
+				664B74E615F99E5300E6E2BD /* EightBallTests.m */,
+				664B74E015F99E5300E6E2BD /* Supporting Files */,
+			);
+			path = EightBallTests;
+			sourceTree = "<group>";
+		};
+		664B74E015F99E5300E6E2BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				664B74E115F99E5300E6E2BD /* EightBallTests-Info.plist */,
+				664B74E215F99E5300E6E2BD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		664B74B615F99E5200E6E2BD /* EightBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664B74EA15F99E5300E6E2BD /* Build configuration list for PBXNativeTarget "EightBall" */;
+			buildPhases = (
+				664B74B315F99E5200E6E2BD /* Sources */,
+				664B74B415F99E5200E6E2BD /* Frameworks */,
+				664B74B515F99E5200E6E2BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EightBall;
+			productName = EightBall;
+			productReference = 664B74B715F99E5200E6E2BD /* EightBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		664B74D715F99E5300E6E2BD /* EightBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664B74ED15F99E5300E6E2BD /* Build configuration list for PBXNativeTarget "EightBallTests" */;
+			buildPhases = (
+				664B74D315F99E5300E6E2BD /* Sources */,
+				664B74D415F99E5300E6E2BD /* Frameworks */,
+				664B74D515F99E5300E6E2BD /* Resources */,
+				664B74D615F99E5300E6E2BD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				664B74DE15F99E5300E6E2BD /* PBXTargetDependency */,
+			);
+			name = EightBallTests;
+			productName = EightBallTests;
+			productReference = 664B74D815F99E5300E6E2BD /* EightBallTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		664B74AE15F99E5200E6E2BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Johnathan Pulos";
+			};
+			buildConfigurationList = 664B74B115F99E5200E6E2BD /* Build configuration list for PBXProject "EightBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 664B74AC15F99E5200E6E2BD;
+			productRefGroup = 664B74B815F99E5200E6E2BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				664B74B615F99E5200E6E2BD /* EightBall */,
+				664B74D715F99E5300E6E2BD /* EightBallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		664B74B515F99E5200E6E2BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664B74C615F99E5200E6E2BD /* InfoPlist.strings in Resources */,
+				664B74CF15F99E5200E6E2BD /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664B74D515F99E5300E6E2BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664B74E415F99E5300E6E2BD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		664B74D615F99E5300E6E2BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		664B74B315F99E5200E6E2BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664B74C815F99E5200E6E2BD /* main.m in Sources */,
+				664B74CC15F99E5200E6E2BD /* AppDelegate.m in Sources */,
+				664B74D215F99E5200E6E2BD /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		664B74D315F99E5300E6E2BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				664B74E715F99E5300E6E2BD /* EightBallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		664B74DE15F99E5300E6E2BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 664B74B615F99E5200E6E2BD /* EightBall */;
+			targetProxy = 664B74DD15F99E5300E6E2BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		664B74C415F99E5200E6E2BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				664B74C515F99E5200E6E2BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		664B74CD15F99E5200E6E2BD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				664B74CE15F99E5200E6E2BD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		664B74E215F99E5300E6E2BD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				664B74E315F99E5300E6E2BD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		664B74E815F99E5300E6E2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		664B74E915F99E5300E6E2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		664B74EB15F99E5300E6E2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightBall/EightBall-Prefix.pch";
+				INFOPLIST_FILE = "EightBall/EightBall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		664B74EC15F99E5300E6E2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightBall/EightBall-Prefix.pch";
+				INFOPLIST_FILE = "EightBall/EightBall-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		664B74EE15F99E5300E6E2BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EightBall.app/EightBall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightBall/EightBall-Prefix.pch";
+				INFOPLIST_FILE = "EightBallTests/EightBallTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		664B74EF15F99E5300E6E2BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EightBall.app/EightBall";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EightBall/EightBall-Prefix.pch";
+				INFOPLIST_FILE = "EightBallTests/EightBallTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		664B74B115F99E5200E6E2BD /* Build configuration list for PBXProject "EightBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664B74E815F99E5300E6E2BD /* Debug */,
+				664B74E915F99E5300E6E2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		664B74EA15F99E5300E6E2BD /* Build configuration list for PBXNativeTarget "EightBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664B74EB15F99E5300E6E2BD /* Debug */,
+				664B74EC15F99E5300E6E2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		664B74ED15F99E5300E6E2BD /* Build configuration list for PBXNativeTarget "EightBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				664B74EE15F99E5300E6E2BD /* Debug */,
+				664B74EF15F99E5300E6E2BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 664B74AE15F99E5200E6E2BD /* Project object */;
+}
