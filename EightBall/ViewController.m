@@ -14,16 +14,23 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+-(void)setAnswerText:(NSString*)newText
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.answerLabel.text = newText;
+}
+- (BOOL)canBecomeFirstResponder {
+    return YES;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDidAppear:(BOOL)animated {
+    [self becomeFirstResponder];
+}
+
+-(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (motion == UIEventSubtypeMotionShake) {
+        [self setAnswerText:@"Shake! Shake!"];
+    }
 }
 
 @end
