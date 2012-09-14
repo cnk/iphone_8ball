@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663AAA001602CC7D0078CA4B /* 8ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 663AA9FF1602CC7D0078CA4B /* 8ball.png */; };
+		663AAA021602CDE50078CA4B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 663AAA011602CDE50078CA4B /* Default-568h@2x.png */; };
+		663AAA041602CF520078CA4B /* 8ball_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 663AAA031602CF520078CA4B /* 8ball_back.png */; };
 		664B74BC15F99E5200E6E2BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BB15F99E5200E6E2BD /* UIKit.framework */; };
 		664B74BE15F99E5200E6E2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BD15F99E5200E6E2BD /* Foundation.framework */; };
 		664B74C015F99E5200E6E2BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BF15F99E5200E6E2BD /* CoreGraphics.framework */; };
@@ -20,7 +23,6 @@
 		664B74DC15F99E5300E6E2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BD15F99E5200E6E2BD /* Foundation.framework */; };
 		664B74E415F99E5300E6E2BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 664B74E215F99E5300E6E2BD /* InfoPlist.strings */; };
 		664B74E715F99E5300E6E2BD /* EightBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B74E615F99E5300E6E2BD /* EightBallTests.m */; };
-		664B74F215F99ECA00E6E2BD /* 8ball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 664B74F115F99ECA00E6E2BD /* 8ball.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		663AA9FF1602CC7D0078CA4B /* 8ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8ball.png; sourceTree = "<group>"; };
+		663AAA011602CDE50078CA4B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		663AAA031602CF520078CA4B /* 8ball_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8ball_back.png; sourceTree = "<group>"; };
 		664B74B715F99E5200E6E2BD /* EightBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		664B74BB15F99E5200E6E2BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		664B74BD15F99E5200E6E2BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,7 +58,6 @@
 		664B74E315F99E5300E6E2BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		664B74E515F99E5300E6E2BD /* EightBallTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightBallTests.h; sourceTree = "<group>"; };
 		664B74E615F99E5300E6E2BD /* EightBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightBallTests.m; sourceTree = "<group>"; };
-		664B74F115F99ECA00E6E2BD /* 8ball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 8ball.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +161,9 @@
 		664B74F015F99EB100E6E2BD /* images */ = {
 			isa = PBXGroup;
 			children = (
-				664B74F115F99ECA00E6E2BD /* 8ball.gif */,
+				663AAA031602CF520078CA4B /* 8ball_back.png */,
+				663AAA011602CDE50078CA4B /* Default-568h@2x.png */,
+				663AA9FF1602CC7D0078CA4B /* 8ball.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -235,7 +241,9 @@
 			files = (
 				664B74C615F99E5200E6E2BD /* InfoPlist.strings in Resources */,
 				664B74CF15F99E5200E6E2BD /* MainStoryboard.storyboard in Resources */,
-				664B74F215F99ECA00E6E2BD /* 8ball.gif in Resources */,
+				663AAA001602CC7D0078CA4B /* 8ball.png in Resources */,
+				663AAA021602CDE50078CA4B /* Default-568h@2x.png in Resources */,
+				663AAA041602CF520078CA4B /* 8ball_back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +452,7 @@
 				664B74EC15F99E5300E6E2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		664B74ED15F99E5300E6E2BD /* Build configuration list for PBXNativeTarget "EightBallTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +461,7 @@
 				664B74EF15F99E5300E6E2BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
