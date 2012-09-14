@@ -16,6 +16,9 @@
 
 @implementation ViewController
 
+- (IBAction)home:(UIStoryboardSegue*)segue{
+}
+
 - (BOOL)canBecomeFirstResponder {
     return YES;
 }
