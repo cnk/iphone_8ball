@@ -100,18 +100,31 @@
             </objects>
             <point key="canvasLocation" x="597" y="104"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Admin View Controller-->
         <scene sceneID="Q6i-yy-eaf">
             <objects>
-                <tableViewController id="9Hy-YY-3mr" sceneMemberID="viewController">
+                <tableViewController id="9Hy-YY-3mr" customClass="AdminViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hDB-Id-s5a">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="24l-IL-t8o">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Admin" id="GaZ-29-kOG">
+                                    <barButtonItem key="leftBarButtonItem" systemItem="done" id="gI2-PP-glY">
+                                        <connections>
+                                            <segue destination="rqN-yf-cFw" kind="unwind" unwindAction="home:" id="xbi-aB-Y32"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="T5e-lX-2RT" style="IBUITableViewCellStyleDefault" id="E4w-GX-cYA">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="T5e-lX-2RT" style="IBUITableViewCellStyleDefault" id="E4w-GX-cYA">
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -130,17 +143,11 @@
                         <connections>
                             <outlet property="dataSource" destination="9Hy-YY-3mr" id="zeo-2G-Hsj"/>
                             <outlet property="delegate" destination="9Hy-YY-3mr" id="H6D-mk-vUr"/>
-                            <outletCollection property="gestureRecognizers" destination="0Ap-q4-q47" appends="YES" id="fyp-Q0-e3X"/>
                         </connections>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nz8-gG-sVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rqN-yf-cFw" userLabel="Exit" sceneMemberID="exit"/>
-                <swipeGestureRecognizer direction="down" id="0Ap-q4-q47">
-                    <connections>
-                        <segue destination="rqN-yf-cFw" kind="unwind" unwindAction="home:" id="pK1-AU-5wG"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="599" y="695"/>
         </scene>
@@ -150,6 +157,9 @@
         <image name="8ball_back.png" width="320" height="460"/>
     </resources>
     <classes>
+        <class className="AdminViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AdminViewController.h"/>
+        </class>
         <class className="AnswerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerViewController.h"/>
             <relationships>

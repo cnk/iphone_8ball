@@ -20,7 +20,7 @@
 {
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     NSArray *answers = appDelegate.answersArray;
-    int rndIndex = arc4random()%[answers count];
+    int rndIndex = arc4random()%answers.count;
     self.answerLabel.text = answers[rndIndex];
 }
 

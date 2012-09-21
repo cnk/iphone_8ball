@@ -24,6 +24,7 @@
 		664B74DC15F99E5300E6E2BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664B74BD15F99E5200E6E2BD /* Foundation.framework */; };
 		664B74E415F99E5300E6E2BD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 664B74E215F99E5300E6E2BD /* InfoPlist.strings */; };
 		664B74E715F99E5300E6E2BD /* EightBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 664B74E615F99E5300E6E2BD /* EightBallTests.m */; };
+		665032C2160C0D2F0081DC16 /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665032C1160C0D2F0081DC16 /* AdminViewController.m */; };
 		6695234C16039CC100DABB54 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6695234B16039CC100DABB54 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		664B74E315F99E5300E6E2BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		664B74E515F99E5300E6E2BD /* EightBallTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightBallTests.h; sourceTree = "<group>"; };
 		664B74E615F99E5300E6E2BD /* EightBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightBallTests.m; sourceTree = "<group>"; };
+		665032C0160C0D2F0081DC16 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminViewController.h; sourceTree = "<group>"; };
+		665032C1160C0D2F0081DC16 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminViewController.m; sourceTree = "<group>"; };
 		6695234B16039CC100DABB54 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +134,8 @@
 				664B74C215F99E5200E6E2BD /* Supporting Files */,
 				663AAA051602DDE00078CA4B /* AnswerViewController.h */,
 				663AAA061602DDE00078CA4B /* AnswerViewController.m */,
+				665032C0160C0D2F0081DC16 /* AdminViewController.h */,
+				665032C1160C0D2F0081DC16 /* AdminViewController.m */,
 			);
 			path = EightBall;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				664B74CC15F99E5200E6E2BD /* AppDelegate.m in Sources */,
 				664B74D215F99E5200E6E2BD /* ViewController.m in Sources */,
 				663AAA071602DDE00078CA4B /* AnswerViewController.m in Sources */,
+				665032C2160C0D2F0081DC16 /* AdminViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
