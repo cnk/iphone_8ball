@@ -18,7 +18,8 @@
 - (void) viewDidLoad
 {
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    self.answersArray = appDelegate.answersArray;
+    NSSortDescriptor* sortOrder = [NSSortDescriptor sortDescriptorWithKey: @"self" ascending: YES];
+    self.answersArray = [appDelegate.answersArray sortedArrayUsingDescriptors: [NSArray arrayWithObject: sortOrder]];
 }
 
 #pragma mark - Table view data source
