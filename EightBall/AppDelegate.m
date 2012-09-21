@@ -13,7 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    self.answersArray = @[@"It is certain.",
+    NSArray *defaultAnswersArray = @[@"It is certain.",
     @"It is decidedly so.",
     @"Without a doubt.",
     @"Yes – definitely.",
@@ -33,6 +33,7 @@
     @"My sources say no.",
     @"Outlook not so good.",
     @"Very doubtful"];
+    self.answersArray = [NSMutableArray arrayWithArray:defaultAnswersArray];
     return YES;
 }
 							

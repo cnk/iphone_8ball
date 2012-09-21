@@ -10,23 +10,23 @@
 #import "AppDelegate.h"
 
 @interface AdminViewController ()
-@property (strong, nonatomic) NSMutableArray *answersArray;
+@property (strong, nonatomic) AppDelegate *appDelegate;
 @end
 
 @implementation AdminViewController
 
 - (void) viewDidLoad
 {
-    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    self.appDelegate = [UIApplication sharedApplication].delegate;
     NSSortDescriptor* sortOrder = [NSSortDescriptor sortDescriptorWithKey: @"self" ascending: YES];
-    self.answersArray = [NSMutableArray arrayWithArray:[appDelegate.answersArray sortedArrayUsingDescriptors: [NSArray arrayWithObject: sortOrder]]];
+    self.appDelegate.answersArray = [NSMutableArray arrayWithArray:[self.appDelegate.answersArray sortedArrayUsingDescriptors: [NSArray arrayWithObject: sortOrder]]];
 }
 
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.answersArray.count;
+    return self.appDelegate.answersArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -35,7 +35,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = self.answersArray[indexPath.row];
+    cell.textLabel.text = self.appDelegate.answersArray[indexPath.row];
     return cell;
 }
 
@@ -45,7 +45,7 @@
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [self.answersArray removeObjectAtIndex:indexPath.row];
+        [self.appDelegate.answersArray removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
