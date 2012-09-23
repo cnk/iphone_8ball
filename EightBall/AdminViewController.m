@@ -13,9 +13,7 @@
     self.appDelegate = [UIApplication sharedApplication].delegate;
     NSSortDescriptor *sortOrder =
         [NSSortDescriptor sortDescriptorWithKey: @"self" ascending: YES];
-    self.appDelegate.answersArray =
-        [[self.appDelegate.answersArray
-            sortedArrayUsingDescriptors: @[sortOrder]] mutableCopy];
+    [self.appDelegate.answersArray sortUsingDescriptors: @[sortOrder]];
 }
 
 #pragma mark - Table view data source
@@ -34,31 +32,18 @@ numberOfRowsInSection:(NSInteger)section {
     return cell;
 }
 
-
--(void)tableView:(UITableView *)tableView
+-(void)  tableView:(UITableView *)tableView
 commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-forRowAtIndexPath:(NSIndexPath *)indexPath {
+ forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.appDelegate.answersArray removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [tableView deleteRowsAtIndexPaths:@[indexPath]
+                         withRowAnimation:UITableViewRowAnimationFade];
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        // Create a new instance of the appropriate class, insert it into the
+        // array and add a new row to the table view
     }   
-}
-
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
 }
 
 @end
