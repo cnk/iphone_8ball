@@ -1,6 +1,14 @@
 #import "AppDelegate.h"
 
+@interface AppDelegate () <UIApplicationDelegate>
+
+@end
+
 @implementation AppDelegate
+
+-(NSString *)answerText {
+    return self.answersArray[arc4random()%[self.answersArray count]];
+}
 
 -(BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
@@ -64,12 +64,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="8ball_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="f2n-iP-3Jw">
                                 <gestureRecognizers/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="13" preferredMaxLayoutWidth="112" translatesAutoresizingMaskIntoConstraints="NO" id="CF6-lF-PGW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="CF6-lF-PGW">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="1Gh-h6-vXI"/>
-                                    <constraint firstAttribute="width" constant="112" id="uwx-nY-X9H"/>
+                                    <constraint firstAttribute="width" constant="144" id="xt4-cy-suo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -77,10 +77,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="CF6-lF-PGW" firstAttribute="leading" secondItem="HGN-sq-Oxf" secondAttribute="leading" constant="115" id="0L5-pE-4RU"/>
                             <constraint firstItem="f2n-iP-3Jw" firstAttribute="top" secondItem="HGN-sq-Oxf" secondAttribute="top" type="default" id="43G-m7-6y8"/>
+                            <constraint firstItem="CF6-lF-PGW" firstAttribute="centerX" secondItem="f2n-iP-3Jw" secondAttribute="centerX" type="default" id="HIo-zM-yid"/>
                             <constraint firstItem="f2n-iP-3Jw" firstAttribute="leading" secondItem="HGN-sq-Oxf" secondAttribute="leading" type="default" id="Jev-0x-gsd"/>
-                            <constraint firstItem="CF6-lF-PGW" firstAttribute="top" secondItem="HGN-sq-Oxf" secondAttribute="top" constant="213" id="uW0-Uz-B2l"/>
+                            <constraint firstItem="CF6-lF-PGW" firstAttribute="top" secondItem="HGN-sq-Oxf" secondAttribute="top" constant="212" id="g47-2Z-iyS"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="YNs-tI-YyG" appends="YES" id="eEb-fU-VEv"/>
@@ -176,8 +176,17 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="action" name="home:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="outlet" name="altitudeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="courseLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="eightBallImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="hAccuracyLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="latitudeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="locationManager" candidateClass="CLLocationManager"/>
+                <relationship kind="outlet" name="longitudeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="shakeMeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="speedLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timestamp" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="vAccuracyLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

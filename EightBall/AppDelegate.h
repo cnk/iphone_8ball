@@ -1,16 +1,7 @@
-//
-//  AppDelegate.h
-//  EightBall
-//
-//  Created by Johnathan Pulos on 9/6/12.
-//  Copyright (c) 2012 Johnathan Pulos. All rights reserved.
-//
+@interface AppDelegate : UIResponder
 
-#import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) NSMutableArray *answersArray;
+@property(strong,nonatomic)UIWindow *window;
+@property(strong,nonatomic)NSMutableArray *answersArray;
+@property(strong,nonatomic,readonly)NSString *answerText;
 
 @end
