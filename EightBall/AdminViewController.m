@@ -9,6 +9,15 @@
 
 @implementation AdminViewController
 
+-(IBAction)cancel:(UIStoryboardSegue *)segue {
+}
+
+-(IBAction)done:(UIStoryboardSegue *)segue {
+    NSIndexPath *indexPath;
+    [(UITableView *)self.view
+       insertRowsAtIndexPaths:@[indexPath]
+             withRowAnimation:UITableViewRowAnimationAutomatic];
+}
 -(void)viewDidLoad {
     ((UITableView *)self.view).dataSource =
         (id<UITableViewDataSource>)[UIApplication sharedApplication].delegate;

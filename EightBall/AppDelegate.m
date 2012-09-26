@@ -2,36 +2,41 @@
 
 @interface AppDelegate () <UIApplicationDelegate,UITableViewDataSource>
 
+@property(strong,nonatomic)NSMutableArray *answersArray;
+
 @end
 
 @implementation AppDelegate
 
--(NSString *)answerText {
-    if (!self.answersArray) {
-        self.answersArray = [@[@"It is certain.",
-                             @"It is decidedly so.",
-                             @"Without a doubt.",
-                             @"Yes – definitely.",
-                             @"You may rely on it.",
-                             @"As I see it, yes.",
-                             @"Most likely.",
-                             @"Outlook good.",
-                             @"Yes.",
-                             @"Signs point to yes.",
-                             @"Reply hazy, try again.",
-                             @"Ask again later.",
-                             @"Better not tell you now.",
-                             @"Cannot predict now.",
-                             @"Concentrate and ask again.",
-                             @"Don't count on it.",
-                             @"My reply is no.",
-                             @"My sources say no.",
-                             @"Outlook not so good.",
-                             @"Very doubtful"] mutableCopy];
+-(NSMutableArray *)answersArray {
+    if (!_answersArray) {
+        _answersArray = [@[@"It is certain.",
+                         @"It is decidedly so.",
+                         @"Without a doubt.",
+                         @"Yes – definitely.",
+                         @"You may rely on it.",
+                         @"As I see it, yes.",
+                         @"Most likely.",
+                         @"Outlook good.",
+                         @"Yes.",
+                         @"Signs point to yes.",
+                         @"Reply hazy, try again.",
+                         @"Ask again later.",
+                         @"Better not tell you now.",
+                         @"Cannot predict now.",
+                         @"Concentrate and ask again.",
+                         @"Don't count on it.",
+                         @"My reply is no.",
+                         @"My sources say no.",
+                         @"Outlook not so good.",
+                         @"Very doubtful"] mutableCopy];
         NSSortDescriptor *sortOrder =
-        [NSSortDescriptor sortDescriptorWithKey: @"self" ascending: YES];
-        [self.answersArray sortUsingDescriptors: @[sortOrder]];
+          [NSSortDescriptor sortDescriptorWithKey: @"self" ascending: YES];
+        [_answersArray sortUsingDescriptors: @[sortOrder]];
     }
+    return _answersArray;
+}
+-(NSString *)answerText {
     return self.answersArray[arc4random()%[self.answersArray count]];
 }
 
@@ -56,10 +61,6 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
         [self.answersArray removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath]
                          withRowAnimation:UITableViewRowAnimationFade];
-    }
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the
-        // array and add a new row to the table view
     }
 }
 
