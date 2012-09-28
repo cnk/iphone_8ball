@@ -141,7 +141,7 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="9Hy-YY-3mr" id="zeo-2G-Hsj"/>
+                            <outlet property="dataSource" destination="9Hy-YY-3mr" id="cD0-jz-o3k"/>
                             <outlet property="delegate" destination="9Hy-YY-3mr" id="H6D-mk-vUr"/>
                         </connections>
                     </tableView>

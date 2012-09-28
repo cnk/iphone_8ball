@@ -39,31 +39,15 @@
 -(NSString *)answerText {
     return self.answersArray[arc4random()%[self.answersArray count]];
 }
-
-#pragma mark - Table view data source
--(NSInteger)tableView:(UITableView *)tableView
-numberOfRowsInSection:(NSInteger)section {
+-(NSUInteger)answerCount {
     return [self.answersArray count];
 }
-
--(UITableViewCell *)tableView:(UITableView *)tableView
-        cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell =
-      [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    cell.textLabel.text = self.answersArray[indexPath.row];
-    return cell;
+-(NSString *)answerAtIndex:(NSUInteger)index {
+    return self.answersArray[index];
 }
-
--(void)  tableView:(UITableView *)tableView
-commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
- forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.answersArray removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath]
-                         withRowAnimation:UITableViewRowAnimationFade];
-    }
+-(void)deleteAnswerAtIndex:(NSUInteger)index{
+    [self.answersArray removeObjectAtIndex:index];
 }
-
 #pragma mark - Application Delegate
 -(BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
