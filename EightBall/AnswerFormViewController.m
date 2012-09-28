@@ -9,5 +9,6 @@
 {
     [super viewDidLoad];
     self.answerTextField.text = self.answerText;
+    [self.answerTextField becomeFirstResponder];
 }
 @end
