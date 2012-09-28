@@ -1,6 +1,6 @@
 #import "AppDelegate.h"
 
-@interface AppDelegate () <UIApplicationDelegate,UITableViewDataSource>
+@interface AppDelegate () <UIApplicationDelegate>
 
 @property(strong,nonatomic)NSMutableArray *answersArray;
 
