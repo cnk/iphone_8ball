@@ -30,7 +30,7 @@
                          @"My sources say no.",
                          @"Outlook not so good.",
                          @"Very doubtful"] mutableCopy];
-        //todo:move sorting to own method
+        //TODO:move sorting to own method
         NSSortDescriptor *sortOrder =
           [NSSortDescriptor sortDescriptorWithKey: @"self" ascending: YES];
         [_answersArray sortUsingDescriptors: @[sortOrder]];
