@@ -49,7 +49,7 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
                 sender:(id)sender{
     if ([@"editAnswer" isEqualToString:segue.identifier]) {
         AnswerFormViewController *answerFormViewController = segue.destinationViewController;
-        answerFormViewController.answerText = ((UITableViewCell *) sender).textLabel.text;
+        answerFormViewController.answerIndex = [((UITableView *)self.view) indexPathForSelectedRow].row;
     }
 }
 @end

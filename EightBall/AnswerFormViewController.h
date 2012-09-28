@@ -1,3 +1,3 @@
 @interface AnswerFormViewController : UITableViewController
-@property(copy,nonatomic)NSString *answerText;
+@property(nonatomic)NSUInteger answerIndex;
 @end
