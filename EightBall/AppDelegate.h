@@ -5,4 +5,6 @@
 @property(nonatomic,readonly)NSUInteger answerCount;
 -(NSString *)answerAtIndex:(NSUInteger)index;
 -(void)deleteAnswerAtIndex:(NSUInteger)index;
+-(void)updateAnswer:(NSString *)newAnswer
+            atIndex:(NSUInteger)index;
 @end

@@ -30,6 +30,7 @@
                          @"My sources say no.",
                          @"Outlook not so good.",
                          @"Very doubtful"] mutableCopy];
+        //todo:move sorting to own method
         NSSortDescriptor *sortOrder =
           [NSSortDescriptor sortDescriptorWithKey: @"self" ascending: YES];
         [_answersArray sortUsingDescriptors: @[sortOrder]];
@@ -47,6 +48,10 @@
 }
 -(void)deleteAnswerAtIndex:(NSUInteger)index{
     [self.answersArray removeObjectAtIndex:index];
+}
+-(void)updateAnswer:(NSString *)newAnswer
+            atIndex:(NSUInteger)index{
+    self.answersArray[index] = newAnswer;
 }
 #pragma mark - Application Delegate
 -(BOOL)application:(UIApplication *)application

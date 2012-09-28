@@ -14,10 +14,7 @@
 }
 
 -(IBAction)done:(UIStoryboardSegue *)segue {
-    NSIndexPath *indexPath;
-    [(UITableView *)self.view
-       insertRowsAtIndexPaths:@[indexPath]
-             withRowAnimation:UITableViewRowAnimationAutomatic];
+    //todo:resort & reload answerArray
 }
 -(void)viewDidLoad{
     [super viewDidLoad];
