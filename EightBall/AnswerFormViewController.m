@@ -1,13 +1,13 @@
 #import "AnswerFormViewController.h"
 
 @interface AnswerFormViewController ()
-@property (strong, nonatomic) IBOutlet UITableViewCell *answerCell;
+@property (strong, nonatomic) IBOutlet UITextField *answerTextField;
 @end
 
 @implementation AnswerFormViewController
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.answerCell.textLabel.text = self.answerText;
+    self.answerTextField.text = self.answerText;
 }
 @end

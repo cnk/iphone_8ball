@@ -165,8 +165,22 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ue9-X1-Zak">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="43" id="Ihy-JR-boR"/>
+                                                        <constraint firstAttribute="width" constant="260" id="WBT-YS-bVT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="ue9-X1-Zak" firstAttribute="top" secondItem="Au8-0h-mRC" secondAttribute="top" constant="1" id="89s-e4-gmQ"/>
+                                            <constraint firstItem="ue9-X1-Zak" firstAttribute="centerX" secondItem="Au8-0h-mRC" secondAttribute="centerX" type="default" id="kw2-ed-czL"/>
+                                        </constraints>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -179,7 +193,7 @@
                     <navigationItem key="navigationItem" title="Answer" id="yWw-4M-nIH"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="answerCell" destination="Au8-0h-mRC" id="1Qw-kH-eki"/>
+                        <outlet property="answerTextField" destination="ue9-X1-Zak" id="mxg-6B-2GI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPe-m9-aht" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -212,11 +226,15 @@
     <classes>
         <class className="AdminViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AdminViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
         </class>
         <class className="AnswerFormViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AnswerFormViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="answerField" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="answerTextField" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="AnswerViewController" superclassName="UIViewController">
