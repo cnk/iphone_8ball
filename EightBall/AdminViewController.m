@@ -1,5 +1,6 @@
 #import "AdminViewController.h"
 #import "AppDelegate.h"
+#import "AnswerFormViewController.h"
 
 @interface AdminViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -41,6 +42,14 @@ commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
         [self.appDelegate deleteAnswerAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath]
                          withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+#pragma mark - Segue methods
+-(void)prepareForSegue:(UIStoryboardSegue *)segue
+                sender:(id)sender{
+    if ([@"editAnswer" isEqualToString:segue.identifier]) {
+        AnswerFormViewController *answerFormViewController = segue.destinationViewController;
+        answerFormViewController.answerText = ((UITableViewCell *) sender).textLabel.text;
     }
 }
 @end
